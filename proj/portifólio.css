@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+p, li{
+    font-size: 16px;
+    color: #222;
+}
+
+h1, h2{
+    color: #19304f;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 35px 55px rgba(0, 0 0, 0.1);
+}
+
+/*-------------------Left--------------------------------*/
+
+.container .box_left{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.info .img01{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.info .img01 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info .nome{
+    margin-left: 11px;
+}
+
+.info .nome h1{
+    margin-left: 6px;
+
+}
+
+.info .nome h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    
+}
+
+.perfil{
+    margin-top: 36px;
+    
+}
+.perfil h2{
+    font-size: 23px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+}
+.perfil p{
+    line-height: 20px;
+}
+
+.educaçao{
+    margin-top: 36px;
+}
+
+.educaçao h2{
+    font-size: 23px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+}
+
+.educaçao ul{
+    position: relative;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+.educaçao ul li{
+    position: relative;
+    line-height: 25px;
+}
+
+.projeto{
+    margin-top: 36px;
+}
+
+.projeto h2{
+    font-size: 23px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+}
+
+.projeto ul{
+    position: relative;
+    line-height: 20px;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+
+.projeto ul li{
+    position: relative;
+    line-height: 25px;
+}
+
+.projeto ul li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: darkblue;
+
+}
+
+.projeto ul li a:hover{
+    color: lightblue;
+}
+
+/*----------------------Right----------------------------*/
+
+.container .box_right{
+    position: relative;
+    background-color: #19304f;
+    padding: 40px;
+}
+
+
+.contato{
+    margin-top: 10em;
+    margin-left: 1em;
+}
+
+.contato h3{
+    margin-bottom: 11px;
+    color: #fff;
+    letter-spacing: 1.5px;
+
+
+}
+
+.contato ul{
+    position: relative;
+}
+
+.contato ul li{
+    position: relative;
+    list-style: none;
+    color: #fff;
+    line-height: 25px;
+}
+
+.contato .icone{
+    margin-top: 22px;
+}
+
+.contato .icone a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 7px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .icone a:hover{
+    color: #19304f;
+    background-color: #fff;
+}
+
+.skill{
+    margin-top: 6em;
+    margin-left: 1em;
+}
+
+.skill h3{
+    margin-bottom: 11px;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.skill h4{
+    color: #fff;
+    font-weight: 300;
+    width: 155px;
+    margin-bottom: 9px;
+    border-bottom: solid 2px #fff;
+    
+}
+
+.copy{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.copy p{
+    color: #fff;
+
+}
+
+
+
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .skill{
+        margin-bottom: 20px;
+    }
+}
+
+
